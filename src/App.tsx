@@ -20,6 +20,8 @@ import '@ionic/react/css/text-transformation.css';
 
 /* Theme variables */
 import Pokedex from './components/Pokedex';
+import PokedexView from './components/PokedexView';
+import Pack from './components/Pack';
 import './theme/variables.css';
 import { MenuPokedexProvider } from './contexts/MenuPokedexProvider';
 import { PokedexMenu } from './components/Menu/PokedexMenu';
@@ -36,10 +38,10 @@ const App: React.FC = () => (
               <PokedexMenu />
             </Route>
             <Route exact path="/pokedex">
-              <>Esta es la Pokedex</>
+              <PokedexView />
             </Route>
             <Route exact path="/pack">
-              <>Esta es la bolsa de objetos</>
+              <Pack />
             </Route>
             <Route exact path="/exit">
             </Route>
